@@ -1,0 +1,32 @@
+table {
+    margin: 50px auto;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+th {
+    text-align: left;
+    font-size: 18px;
+}
+
+td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 300px;
+}
+
+.center {
+    text-align: center;
+}
+
+.result {
+    width: 600px;
+    margin: 50px auto;
+    border: 1px solid black;
+    padding: 15px;
+}

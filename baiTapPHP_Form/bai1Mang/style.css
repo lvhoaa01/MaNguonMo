@@ -1,0 +1,27 @@
+table {
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #e7f5ff;
+}
+
+th {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+td {
+    padding: 6px;
+}
+
+.center {
+    text-align: center;
+}
+
+.error {
+    text-align: center;
+    color: red;
+}
+
+.result {
+    min-width: 500px;
+}

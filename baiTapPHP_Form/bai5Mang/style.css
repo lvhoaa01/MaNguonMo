@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #ffd6eb;
+    border: 1px solid #b0006d;
+}
+
+th {
+    font-size: 22px;
+    color: #b0006d;
+    padding-bottom: 12px;
+}
+
+td {
+    padding: 6px;
+}
+
+input[type="text"] {
+    width: 320px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.result {
+    width: 450px !important;
+    background-color: #f8f8f8;
+}
+
+.center {
+    text-align: center;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
