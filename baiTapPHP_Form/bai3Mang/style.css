@@ -1,13 +1,13 @@
 table {
-    margin: 50px auto;
-    padding: 15px;
+    margin: auto;
+    padding: 0;
     background-color: #ffd6eb;
 }
 
 th {
     font-size: 22px;
     color: #b0006d;
-    padding-bottom: 10px;
+    padding-bottom: 0;
 }
 
 td {
@@ -22,4 +22,10 @@ input[type="text"] {
 .error {
     color: red;
     text-align: center;
+}
+.table_tittle{
+  color: #eae8e4;
+  background-color: #a78603;
+  margin: none;
+  padding: 15px;
 }

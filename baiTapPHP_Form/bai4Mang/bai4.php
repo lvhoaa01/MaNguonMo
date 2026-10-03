@@ -145,13 +145,27 @@ if (isset($_POST["tim_kiem"])) {
           <input
             type="submit"
             name="tim_kiem"
+            style="background-color: aqua;"
             value="Tìm kiếm">
 
         </td>
 
       </tr>
 
+      <tr>
 
+        <td>Mảng:</td>
+
+        <td>
+
+          <input
+            type="text"
+            value="<?php echo $chuoi_mang; ?>"
+            readonly>
+
+        </td>
+
+      </tr>
       <tr>
 
         <td>Kết quả tìm kiếm:</td>
@@ -165,6 +179,12 @@ if (isset($_POST["tim_kiem"])) {
 
         </td>
 
+      </tr>
+
+      <tr>
+        <td colspan="2" class="center">
+          Các phần tử trong mảng sẽ cách nhau bằng dấu ","
+        </td>
       </tr>
 
     </table>

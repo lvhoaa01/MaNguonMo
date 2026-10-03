@@ -5,7 +5,7 @@ $address = trim($_POST["address"] ?? "");
 $phone = trim($_POST["phone"] ?? "");
 $country = $_POST["country"] ?? "NONE";
 
-$gender = $_POST["gender"] ?? "";
+$gender = $_POST["gender"] ?? "Nam";
 $study = $_POST["study"] ?? [];
 $note = trim($_POST["note"] ?? "");
 
@@ -113,7 +113,7 @@ if ($loi != "") {
         Study:
 
         <?php
-        echo implode(", ", $study); // implode thể hiện hết mảng
+        echo implode(", ", $study); // chuyển mảng thành chuỗi, nối bằng dấu ,
         ?>
     </p>
 

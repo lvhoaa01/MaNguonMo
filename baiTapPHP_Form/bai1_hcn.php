@@ -51,13 +51,14 @@
           <td>Diện tích:</td>
           <td>
             <input type="text"
+            style="background-color: pink;"
             value="<?php echo $dien_tich ?>"
             readonly>
           </td>
         </tr>
         <tr>
           <td colspan="2" class="center" >
-            <input type="submit" name="tinh" value="Tính">
+            <input type="submit" name="tinh" style="background-color: pink;" value="Tính">
           </td>
         </tr>
       </table>

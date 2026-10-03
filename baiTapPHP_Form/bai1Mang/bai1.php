@@ -126,7 +126,7 @@ if ($thong_bao != "") {
 ?>
 
 
-<?php if (count($mang) > 0): ?>
+<?php if (count($mang) > 0): ?>  
 
 <table class="result">
 

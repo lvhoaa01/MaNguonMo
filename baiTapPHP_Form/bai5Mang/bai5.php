@@ -102,7 +102,7 @@ if (isset($_POST["thay_the"])) {
 
     <table>
 
-        <tr>
+        <tr style="background-color: pink;">
             <th colspan="2">
                 THAY THẾ
             </th>
@@ -159,11 +159,12 @@ if (isset($_POST["thay_the"])) {
 
         <tr>
 
-            <td colspan="2" class="center">
+            <td colspan="2" class="center" >
 
                 <input
                     type="submit"
                     name="thay_the"
+                    style="background-color: yellow;"
                     value="Thay thế">
 
             </td>
@@ -181,6 +182,7 @@ if (isset($_POST["thay_the"])) {
                     type="text"
                     class="result"
                     value="<?php echo $mang_cu_hien_thi; ?>"
+                    style="background-color: red;"
                     readonly>
 
             </td>
@@ -198,12 +200,17 @@ if (isset($_POST["thay_the"])) {
                     type="text"
                     class="result"
                     value="<?php echo $mang_moi_hien_thi; ?>"
+                    style="background-color: red;"
                     readonly>
 
             </td>
 
         </tr>
-
+        <tr>
+            <td colspan="2" class="center">
+                <span style="color: red;font-weight: bold;">(*)</span> Các phần từ trong mảng sẽ cách nhau bằng dấu ","
+            </td>
+        </tr>
     </table>
 
 </form>

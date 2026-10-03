@@ -114,7 +114,7 @@ if (isset($_POST["phat_sinh"])) {
     <table>
 
         <tr>
-            <th colspan="2">
+            <th colspan="2" class="table_tittle">
                 PHÁT SINH MẢNG VÀ TÍNH TOÁN
             </th>
         </tr>
@@ -145,7 +145,7 @@ if (isset($_POST["phat_sinh"])) {
                 <input
                     type="submit"
                     name="phat_sinh"
-                    value="Phát sinh và tính toán">
+                    value="Phát sinh">
 
             </td>
 
@@ -160,6 +160,7 @@ if (isset($_POST["phat_sinh"])) {
 
                 <input
                     type="text"
+                    style="background-color: pink;"
                     value="<?php echo $mang_hien_thi; ?>"
                     readonly>
 
@@ -176,6 +177,7 @@ if (isset($_POST["phat_sinh"])) {
 
                 <input
                     type="text"
+                    style="background-color: pink;"
                     value="<?php echo $max; ?>"
                     readonly>
 
@@ -186,12 +188,13 @@ if (isset($_POST["phat_sinh"])) {
 
         <tr>
 
-            <td>GTNN (MIN) trong mảng:</td>
+            <td>TTNN (MIN) trong mảng:</td>
 
             <td>
 
                 <input
                     type="text"
+                    style="background-color: pink;"
                     value="<?php echo $min; ?>"
                     readonly>
 
@@ -208,13 +211,17 @@ if (isset($_POST["phat_sinh"])) {
 
                 <input
                     type="text"
+                    style="background-color: pink;"
                     value="<?php echo $tong; ?>"
                     readonly>
 
             </td>
 
         </tr>
-
+        <tr>
+            <td colspan="2" class="center">
+                <span style="color: red;">Ghi chú: </span> Các phần từ trong mảng sẽ có giá trị từ 0 đến 20
+        </tr>
     </table>
 
 </form>

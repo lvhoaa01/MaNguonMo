@@ -67,7 +67,6 @@ if (isset($_POST["sap_xep"])) {
     if (trim($chuoi_mang) == "") {
 
         $thong_bao = "Mảng không được để trống.";
-
     } else {
         $mang = explode(",", $chuoi_mang);
         $mang = array_map("trim", $mang);
@@ -87,9 +86,8 @@ if (isset($_POST["sap_xep"])) {
         if (!$hop_le) {
 
             $thong_bao = "Các phần tử trong mảng phải là số.";
-
         } else {
-          
+
             $mang_tang = sapTang($mang);
             // sort($mang);
             $mang_giam = sapGiam($mang);
@@ -120,92 +118,100 @@ if (isset($_POST["sap_xep"])) {
 
 <body>
 
-<form method="POST" action="">
+    <form method="POST" action="">
 
-    <table>
+        <table>
 
-        <tr>
-            <th colspan="2">
-                SẮP XẾP MẢNG
-            </th>
-        </tr>
-
-
-        <tr>
-
-            <td>Nhập mảng:</td>
-
-            <td>
-
-                <input
-                    type="text"
-                    name="mang"
-                    value="<?php echo htmlspecialchars($chuoi_mang); ?>">
-
-            </td>
-
-        </tr>
+            <tr>
+                <th colspan="3" style="background-color : antiquewhite">
+                    SẮP XẾP MẢNG
+                </th>
+            </tr>
 
 
-        <tr>
+            <tr>
 
-            <td colspan="2" class="center">
+                <td>Nhập mảng:</td>
 
-                <input
-                    type="submit"
-                    name="sap_xep"
-                    value="Sắp xếp">
+                <td>
 
-            </td>
+                    <input
+                        type="text"
+                        name="mang"
+                        value="<?php echo htmlspecialchars($chuoi_mang); ?>">
 
-        </tr>
+                </td>
+                <td style="
+                color: red;
+            ">(*)</td>
 
-
-        <tr>
-
-            <td>Tăng dần:</td>
-
-            <td>
-
-                <input
-                    type="text"
-                    class="result"
-                    value="<?php echo $tang_dan; ?>"
-                    readonly>
-
-            </td>
-
-        </tr>
+            </tr>
 
 
-        <tr>
+            <tr>
 
-            <td>Giảm dần:</td>
+                <td colspan="3" class="center">
 
-            <td>
+                    <input
+                        type="submit"
+                        name="sap_xep"
+                        value="Sắp xếp tăng/giảm">
+                </td>
 
-                <input
-                    type="text"
-                    class="result"
-                    value="<?php echo $giam_dan; ?>"
-                    readonly>
+            </tr>
 
-            </td>
+            <tr>
+                <td style="color: red; font-weight: bold;" colspan="3">Sau khi sắp xếp:</td>
+            </tr>
+            <tr>
 
-        </tr>
+                <td>Tăng dần:</td>
 
-    </table>
+                <td>
 
-</form>
+                    <input
+                        type="text"
+                        class="result"
+                        value="<?php echo $tang_dan; ?>"
+                        readonly>
+
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+
+                <td>Giảm dần:</td>
+
+                <td>
+
+                    <input
+                        type="text"
+                        class="result"
+                        value="<?php echo $giam_dan; ?>"
+                        readonly>
+
+                </td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td colspan="3" class="center">
+                    <span style="color: red;font-weight: bold;">(*)</span> Các số được nhập cách nhau bằng dấu *,*
+                </td>
+            </tr>
+        </table>
+
+    </form>
 
 
-<?php
+    <?php
 
-if ($thong_bao != "") {
-    echo "<p class='error'>$thong_bao</p>";
-}
+    if ($thong_bao != "") {
+        echo "<p class='error'>$thong_bao</p>";
+    }
 
-?>
+    ?>
 
 </body>
 

@@ -3,8 +3,8 @@ body {
 }
 
 table {
-    margin: 50px auto;
-    padding: 15px;
+    margin: auto;
+    padding: 0;
     background-color: #dff6f4;
     border: 1px solid #168f8b;
 }
@@ -12,7 +12,7 @@ table {
 th {
     font-size: 22px;
     color: #137f7b;
-    padding-bottom: 12px;
+    padding-bottom: none;
 }
 
 td {
