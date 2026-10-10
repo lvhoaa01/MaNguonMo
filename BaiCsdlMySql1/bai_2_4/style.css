@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 38px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #333333;
+}
+
+.wrapper {
+    width: 820px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0 0 10px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    color: #cf6848;
+    letter-spacing: 2px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e1c8b2;
+    font-size: 14px;
+}
+
+th,
+td {
+    border: 1px solid #ecd8c6;
+    padding: 5px 8px;
+}
+
+th {
+    text-align: center;
+    font-weight: bold;
+    color: #a94c38;
+    background: #f7d9c0;
+}
+
+tbody tr:nth-child(odd) {
+    background: #fff9f4;
+    color: #8f5b44;
+}
+
+tbody tr:nth-child(even) {
+    background: #f6cfae;
+    color: #a54837;
+}
+
+.center {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.price {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.phan-trang {
+    margin-top: 12px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+}
+
+.phan-trang a,
+.phan-trang span {
+    display: inline-block;
+    min-width: 18px;
+    margin: 0 2px;
+    text-decoration: none;
+}
+
+.phan-trang a {
+    color: #a14b91;
+}
+
+.phan-trang a:hover {
+    text-decoration: underline;
+}
+
+.phan-trang .trang-hien-tai {
+    color: #333333;
+    font-weight: bold;
+}
