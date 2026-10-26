@@ -4,7 +4,6 @@ require_once __DIR__ . "/../config.php";
 
 $sql = "select Ma_sua, Ten_sua, Ma_loai_sua, Trong_luong, Don_gia from sua where Ma_loai_sua = 'SD' or Don_gia <= 12000";
 $result = mysqli_query($conn, $sql) or die('Lỗi truy vấn: ' . mysqli_error($conn));
-
 // s% bắt đầu || %s kết thúc || %s% giữa bất kì
 ?>
 
@@ -28,7 +27,7 @@ $result = mysqli_query($conn, $sql) or die('Lỗi truy vấn: ' . mysqli_error($
       <th>Đơn giá</th>
     </tr>
 
-    <?php while ($row = mysqli_fetch_assoc($result)) {
+    <?php while($row = mysqli_fetch_assoc($result)) {
     ?>
       <tr>
         <td><?php echo $row['Ma_sua']; ?></td>

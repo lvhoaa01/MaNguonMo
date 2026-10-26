@@ -112,7 +112,7 @@ if (isset($_POST["sap_xep"])) {
 
     <title>Sắp xếp mảng</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
@@ -138,7 +138,8 @@ if (isset($_POST["sap_xep"])) {
                     <input
                         type="text"
                         name="mang"
-                        value="<?php echo htmlspecialchars($chuoi_mang); ?>">
+                        size="50"
+                        value="<?php echo $chuoi_mang; ?>">
 
                 </td>
                 <td style="
@@ -172,6 +173,7 @@ if (isset($_POST["sap_xep"])) {
                     <input
                         type="text"
                         class="result"
+                        size="50"
                         value="<?php echo $tang_dan; ?>"
                         readonly>
 
@@ -188,6 +190,7 @@ if (isset($_POST["sap_xep"])) {
                     <input
                         type="text"
                         class="result"
+                        size="50"
                         value="<?php echo $giam_dan; ?>"
                         readonly>
 

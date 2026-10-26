@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 table {
-    margin: auto;
-    padding: 0;
     background-color: #dff6f4;
     border: 1px solid #168f8b;
 }
@@ -12,26 +12,26 @@ table {
 th {
     font-size: 22px;
     color: #137f7b;
-    padding-bottom: none;
 }
 
-td {
-    padding: 6px;
-}
+/* td {
+} */
 
 input[type="text"] {
-    width: 330px;
     padding: 5px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 input[type="submit"] {
-    padding: 5px 15px;
+    padding: 5px;
     cursor: pointer;
 }
 
+td:nth-child(2) {
+    width: 400px; /* Bạn có thể chỉnh số này to nhỏ tùy ý */
+}
 .result {
-    width: 450px !important;
     background-color: #f5f5f5;
 }
 
