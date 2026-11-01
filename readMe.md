@@ -3,3 +3,6 @@ Lập trình mã nguồn mở
 
 ## About
 This repository is used to learn GitHub.
+
+## Goals
+Complete the course.
